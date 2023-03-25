@@ -9,9 +9,9 @@ const apiClient = axios.create({
 })
 export default {
     getTodoItems() {
-        return apiClient.get('/data')
+        return apiClient.get('https://jsondata-4tjm.onrender.com/data')
     },
     getItem(id) {
-        return apiClient.get('/data/' + id)
+        return apiClient.get('https://jsondata-4tjm.onrender.com/data/' + id)
     }
 }
